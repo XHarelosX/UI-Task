@@ -1,24 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Menu from './Components/MenuComponent/Menu';
+import Header from './Components/HeaderComponent/Header';
+import classes from './App.module.css';
+import MainArea from './Components/MainAreaComponent/MainArea';
 
 function App() {
+
+  const [menuStatus, setMenuStatus] = useState(false);
+
+  const menuHandler = () => {
+    if (!menuStatus) {
+      setMenuStatus(true);
+    } else {
+      setMenuStatus(false);
+    }
+  }
+
+  let mainArea = classes.main_menu_close;
+
+  if (menuStatus) {
+    mainArea = classes.main_menu_open;
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Menu menuStatus={menuStatus} />
+      <main className={mainArea}>
+        <Header menuClick={menuHandler} />
+        <MainArea />
+      </main>
+
     </div>
   );
 }
