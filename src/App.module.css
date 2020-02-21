@@ -1,11 +1,9 @@
 .main_menu_close {
-    transition-duration: 600ms;
-    transition-delay: 100ms;
+    transition-duration: 700ms;
 }
 
 .main_menu_open {
-    margin-left: 28vh;
+    margin-left: 250px;
     transition-property: margin;
-    transition-duration: 750ms;
-    transition-delay: 100ms;
+    transition-duration: 700ms;
 }

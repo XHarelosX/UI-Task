@@ -2,12 +2,14 @@ import React, { Fragment } from 'react';
 import classes from './MainArea.module.css';
 import Chart1 from '../ChartsComponent/Chart1';
 import Chart2 from '../ChartsComponent/Chart2';
+import Tasks from '../ListsComponents/TasksComponent/TasksList';
+import Messages from '../ListsComponents/MessagesComponent/MessagesList';
+import Activity from '../ListsComponents/ActivityComponent/ActivityList';
 
-interface Props {
 
-}
 
-const MainArea: React.FC<Props> = () => {
+
+const MainArea: React.FC = () => {
 
     const user: string = "Harel"
 
@@ -18,7 +20,7 @@ const MainArea: React.FC<Props> = () => {
                 <section className={classes.chart_area}>
                     <div className={classes.chart1}>
                         <div>
-                            <h1>Your Sales</h1>
+                            <h1 className={classes.h1}>Your Sales</h1>
                             <div>
                                 <span></span>
                             </div>
@@ -28,7 +30,7 @@ const MainArea: React.FC<Props> = () => {
                         </div>
                     </div>
                     <div className={classes.chart2}>
-                        <h1>Reports</h1>
+                        <h1 className={classes.h1}>Reports</h1>
                         <div className={classes.chart2_conteiner}>
                             <Chart2 />
                         </div>
@@ -37,18 +39,14 @@ const MainArea: React.FC<Props> = () => {
             </main>
             <main className={classes.mian_area_lists}>
                 <section>
-                    <ul>
-                        {/* List of li Tasks*/}
-                    </ul>
+                    <ul className={classes.tasks_ul}></ul>
                 </section>
                 <section>
-                    <ul>
-                        {/* List of li Messages*/}
-                    </ul>
+                    <ul className={classes.messages_ul}></ul>
                 </section>
                 <section>
-                    <ul>
-                        {/* List of li Activity*/}
+                    <ul className={classes.activity_ul}>
+                        <Activity />
                     </ul>
                 </section>
             </main>
