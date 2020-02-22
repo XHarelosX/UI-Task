@@ -15,41 +15,50 @@ const MainArea: React.FC = () => {
 
     return (
         <Fragment>
-            <main className={classes.main_area_charts}>
-                <h1>Hello {user}</h1>
-                <section className={classes.chart_area}>
+            <h1 className={classes.h1}>Hello {user}</h1>
+            <div className={classes.div_main_area_container}>
+                <section className={classes.main_chart_area}>
                     <div className={classes.chart1}>
-                        <div>
-                            <h1 className={classes.h1}>Your Sales</h1>
-                            <div>
-                                <span></span>
-                            </div>
+                        <div className={classes.title_container}>
+                            <h1 className={classes.h1_chart_title}>Your Sales</h1>
+                            <select className={classes.select_tag}>
+                                <option disabled selected>Select Period:</option>
+                                <option> Last Year</option>
+                                <option> Last Month</option>
+                                <option> Last Week</option>
+                            </select>
                         </div>
                         <div className={classes.chart1_conteiner}>
                             <Chart1 />
                         </div>
                     </div>
                     <div className={classes.chart2}>
-                        <h1 className={classes.h1}>Reports</h1>
+                        <div className={classes.title_container}>
+                            <h1 className={classes.h1_chart_title}>Reports</h1>
+                            <select className={classes.select_tag}>
+                                <option disabled selected>Select Period:</option>
+                                <option> Last Year</option>
+                                <option> Last Month</option>
+                                <option> Last Week</option>
+                            </select>
+                        </div>
                         <div className={classes.chart2_conteiner}>
                             <Chart2 />
                         </div>
                     </div>
                 </section>
-            </main>
-            <main className={classes.mian_area_lists}>
-                <section>
-                    <ul className={classes.tasks_ul}></ul>
-                </section>
-                <section>
-                    <ul className={classes.messages_ul}></ul>
-                </section>
-                <section>
-                    <ul className={classes.activity_ul}>
+                <main className={classes.main_area_lists}>
+                    <section className={classes.section}>
+                        <Tasks />
+                    </section>
+                    <section className={classes.section}>
+                        <Messages />
+                    </section>
+                    <section className={classes.section}>
                         <Activity />
-                    </ul>
-                </section>
-            </main>
+                    </section>
+                </main>
+            </div>
         </Fragment>
     )
 }

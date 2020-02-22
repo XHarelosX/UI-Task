@@ -29,7 +29,6 @@ function App() {
         <Header menuClick={menuHandler} />
         <MainArea />
       </main>
-
     </div>
   );
 }

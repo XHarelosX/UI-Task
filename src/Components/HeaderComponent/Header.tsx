@@ -1,4 +1,4 @@
-import React, { Fragment, FC } from 'react'
+import React, { Fragment } from 'react'
 import classes from './Header.module.css';
 
 interface Props {

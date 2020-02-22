@@ -6,14 +6,14 @@ const tasks_List: React.FC = () => {
     return (
         <Fragment>
             <ul>
+                <li>Tasks</li>
                 {tasks.map(item => {
                     return (
-                        <li>
-                            {item.message.username}
+                        <li key={item.task.id}>
+                            {item.task.title}
                         </li>
                     )
                 })}
-
             </ul>
         </Fragment >
     )

@@ -1,7 +1,7 @@
 .aside {
     height: 100%;
     background-color: #0e1a35;
-    width: 250px;
+    width: 300px;
     position: fixed;
     top: 0;
     box-sizing: border-box;
@@ -38,13 +38,13 @@
 .menu_close {
     transform: translateX(-100%);
     transition-property: transform;
-    transition-duration: 700ms;
+    transition-duration: 500ms;
 }
 
 .menu_open {
     transform: translateX(0%);
     transition-property: transform;
-    transition-duration: 700ms;
+    transition-duration: 500ms;
 }
 .icon {
     margin-right: 10px;

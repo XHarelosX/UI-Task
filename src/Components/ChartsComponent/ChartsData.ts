@@ -4,7 +4,7 @@ export const chart_1_Data: object = {
 
     datasets: [
         {
-            data: [10, 30, 50, 40, 20],
+            data: [20, 30, 50, 40, 30],
 
             backgroundColor: [
                 "#4b74e0",
@@ -21,21 +21,21 @@ export const chart_1_Options: object = {
     legend: {
         position: "right",
         labels: {
-            padding: 13,
-            boxWidth: 12,
-            fontSize: 14,
+            padding: 24,
+            boxWidth: 10,
+            fontSize: 12,
             usePointStyle: true
         }
     },
     layout: {
         padding: {
             left: 0,
-            right: 20,
+            right: 10,
             top: 0,
-            bottom: 50
+            bottom: 10
         }
     },
-    cutoutPercentage: 60
+    cutoutPercentage: 65
 };
 
 // ----------- Chart 2 -------------->
@@ -76,10 +76,10 @@ export const chart_2_Options: object = {
     },
     layout: {
         padding: {
-            left: 20,
+            left: 10,
             right: 30,
-            top: 20,
-            bottom: 0
+            top: 0,
+            bottom: 15
         }
     }
 };

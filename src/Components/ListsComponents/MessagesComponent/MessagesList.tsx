@@ -5,15 +5,16 @@ const messages_List: React.FC = () => {
 
     return (
         <Fragment>
-            
+
             <ul>
-                {messages.map( item => { return (
-                        <li>
+                <li>Messages</li>
+                {messages.map(item => {
+                    return (
+                        <li key={item.message.id}>
                             {item.message.username}
                         </li>
                     )
                 })}
-
             </ul>
         </Fragment >
     )
