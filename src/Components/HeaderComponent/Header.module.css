@@ -53,10 +53,10 @@
 }
 .menu_icon {
     font-size: 28px;
-    margin-right: 10px;
     cursor: pointer;
 }
 .search_icon {
     cursor: pointer;
+    margin-left: 10px;
     padding-top: 2px;
 }

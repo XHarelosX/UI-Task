@@ -6,9 +6,9 @@
     border: 1px solid #d4d9e3;
     padding: 0;
 }
+
 .li_title_container {
     display: flex;
-    border-bottom: 1px solid #d4d9e3;;
     align-items: center;
     font-size: 20px;
     font-weight: bold;
@@ -21,7 +21,20 @@
     display: flex;
     justify-content: flex-start;
 }
-.li_activitys_number {
+.li_message {
+    height: var(--li_height);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid #d4d9e3;
+    font-size: 14px;
+}
+.li_message:hover {
+    background-color: #e5eaf5;
+}
+
+.li_messages_number {
     width: 50%;
     display: flex;
     justify-content: flex-end;
@@ -38,16 +51,6 @@
     color: white;
 }
 
-.li_activity {
-    height: var(--li_height);
-    display: flex;
-    align-items: center;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;
-}
-.li_activity:hover {
-    background-color: #e5eaf5;
-}
 .profile_icon {
     display: flex;
     align-items: center;
@@ -60,22 +63,21 @@
     margin-right: 5px;
 }
 
-.activity_conteiner {
+.message_conteiner {
     padding-right: 10px;
     height: 50px;
 }
-.activity_username {
+.message_username {
     font-weight: bold;
 }
-.activity_action {
-    color: gray;
+.message_action {
+    padding-top: 5px;
 }
-.activity_on_task {
+.message_on_task {
     font-weight: bold;
 }
 
-.activity_time_conteiner {
-    padding-top: 3px;
-    display: flex;
-    align-items: center;
+.message_time_conteiner {
+    color: gray;
+    font-weight: 400;
 }

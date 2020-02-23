@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <Menu menuStatus={menuStatus} />
+        <Menu menuStatus={menuStatus} />
       <main className={mainArea}>
         <Header menuClick={menuHandler} />
         <MainArea />

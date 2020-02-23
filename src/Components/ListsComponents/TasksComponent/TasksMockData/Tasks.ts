@@ -4,7 +4,7 @@ export const tasks: any[] = [
             id: 1,
             symbol: "N",
             title: "New website for Symu.com",
-            status: "5 days Delays"
+            status: "5 days delays"
         }
     },
     {
@@ -12,7 +12,7 @@ export const tasks: any[] = [
             id: 2,
             symbol: "F",
             title: "Free business PSD Template",
-            status: "2 days Delays"
+            status: "2 days delays"
         }
     },
     {

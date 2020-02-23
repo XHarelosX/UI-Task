@@ -7,7 +7,7 @@ interface Props { }
 const Charts: React.FC<Props> = () => {
     return (
         <Fragment>
-            <Doughnut data={chart_1_Data} options={chart_1_Options} height={40} width={90} />
+            <Doughnut data={chart_1_Data} options={chart_1_Options} height={65} width={100} />
         </Fragment>
     )
 }

@@ -29,10 +29,10 @@ export const chart_1_Options: object = {
     },
     layout: {
         padding: {
-            left: 0,
-            right: 10,
+            left: 50,
+            right: 0,
             top: 0,
-            bottom: 10
+            bottom: 20
         }
     },
     cutoutPercentage: 65
@@ -59,7 +59,7 @@ export const chart_2_Data: object = {
             data: [86, 114, 90, 256, 600, 300, 350, 150, 190, 170, 300, 280],
             borderColor: "#3e95cd",
             fill: false,
-            pointRadius: 0
+            pointRadius: 5
         }
     ]
 };
@@ -79,7 +79,7 @@ export const chart_2_Options: object = {
             left: 10,
             right: 30,
             top: 0,
-            bottom: 15
+            bottom: 0
         }
     }
 };
